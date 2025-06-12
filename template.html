@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="frame">
+    <div class="name">{{姓名}}</div>
+    <div class="text">生於：{{出生日}}</div>
+    <div class="text">歿於：{{歿日}}</div>
+    <div class="text">後人：{{後人}}</div>
+    {{#if 備註}}
+      <div class="text">{{備註}}</div>
+    {{/if}}
+  </div>
+</body>
+</html>
