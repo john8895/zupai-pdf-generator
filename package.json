@@ -1,0 +1,10 @@
+{
+  "name": "zupai-pdf-generator",
+  "version": "1.0.0",
+  "description": "直式祖牌 PDF 產出工具",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {}
+}
