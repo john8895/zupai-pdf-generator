@@ -1,7 +1,6 @@
 {
   "name": "zupai-pdf-generator",
   "version": "1.0.0",
-  "description": "自動產出直式祖牌 PDF",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
