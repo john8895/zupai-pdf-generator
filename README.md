@@ -1,27 +1,26 @@
-# zupai-pdf-generator
+# 祖牌 PDF Generator
 
-產出直式祖牌 PDF，支援自訂尺寸、標楷體、自動縮字與直式排版。
+REST API server that generates formatted PDF documents for traditional ancestral tablets (祖先牌位).
 
-## 使用方式
+## How It Works
+
+```
+JSON input → Handlebars template → Puppeteer render → PDF output
+```
+
+## Tech Stack
+
+| Tech | Purpose |
+|------|---------|
+| Node.js + Express | API server |
+| Handlebars | HTML templating |
+| Puppeteer | PDF rendering |
+
+## Getting Started
 
 ```bash
+git clone https://github.com/john8895/zupai-pdf-generator.git
+cd zupai-pdf-generator
 npm install
 node server.js
 ```
-
-用 curl 呼叫：
-
-```bash
-curl -X POST http://localhost:3000/generate \
-  -H "Content-Type: application/json" \
-  -d @example.json \
-  --output output.pdf
-```
-
-## 設定說明
-
-- `template.html`：祖牌模板
-- `style.css`：直式排版樣式
-- `generate.js`：產 PDF 的程式
-- `server.js`：Express API
-- `example.json`：測試資料
